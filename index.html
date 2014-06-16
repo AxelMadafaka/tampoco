@@ -1,0 +1,374 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>App Sleepers</title>
+<link href="jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
+<script src="jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="jquery.mobile-1.0.min.js" type="text/javascript"></script>
+<script language="javascript">
+var tel,nombre, x, car, cara, carac, caract, phone, ancho, largo, len, MayN, correo, m=0, k=0, z=0, ar, mayu;
+var Seguro1="Kellin Quinn";
+var Seguro2, anch, larg, le, ancho1, largo1, len1, fuera, fuera1, caja, caja1;
+var meeno=0;
+
+function NombreUsuario(){
+	nombre=document.getElementById("txtNombre").value;
+	MayN=nombre.toUpperCase();
+	document.getElementById("txtNombre").value=MayN;
+	ancho=MayN.length;
+	for(x=0;x<=ancho-1;x++){
+		car=MayN.charAt(x);
+		if(((car>='A')&&(car<='Z'))||(car==' '))
+		{
+			}
+		else{
+			alert("Se encontro un caracter diferente a letras");           break;
+			}
+	
+	}
+	
+	
+}
+function email(){
+correo=document.getElementById("txtEmail").value;
+largo=correo.length;
+meeno=correo.length;
+if(meeno==0)
+{
+	
+}
+else{
+if(meeno>0)
+{
+for(x=0;x<=largo-1;x++){
+cara=correo.charAt(x);
+
+
+
+
+if(x==0){
+	  if((cara>=0)&&(cara<=9)){
+			  alert("El primer caracter no tiene que ser un número")
+			  }
+	  }
+	  
+		
+  
+	
+	}
+	for(x=0;x<=largo-1;x++){
+    carac=correo.charAt(x);
+	if(carac=='@'){
+		  m++;
+		  }
+		  
+		}
+
+		  
+	for(x=0;x<=largo-1;x++){
+    caract=correo.charAt(x);
+		if(caract=='.')
+		{
+			k++;
+			}
+		
+			
+		
+			
+			}
+			 if(m>1)
+	{
+		alert("Solo se permite una arroba");
+	
+		
+	}
+	else{
+		if(m==0){
+		alert("Olvidaste poner @");
+		}
+		
+		}
+		if(k==0){
+				alert("Olvidaste poner punto");
+				
+				
+			}
+			m=0;
+k=0;
+	
+}
+}
+		
+
+			
+		
+	  
+  }
+  function telefono(){
+tel=document.getElementById("txtPhone").value;
+len=tel.length;
+for(x=0;x<=len-1;x++)
+{
+	phone=tel.charAt(x);
+	if(((phone>=0)&&(phone<=9))||((phone==' ')||(phone=='-')))
+	{
+	
+
+
+}
+else
+{
+	z++;
+
+}
+}
+if(z>0)
+	{
+		alert("Se encontraron "+z+" caracteres invalidos");
+	}	
+	z=0;
+
+  }
+
+  function Asunto(){
+  	asu=document.getElementById("txtAsunto").value;
+  	Mayu=asu.toUpperCase();
+  	document.getElementById("txtAsunto").value=Mayu;
+
+
+  }
+
+  function  Acceso(){
+  	anch=document.getElementById("txtNombre").value;
+        larg=document.getElementById("txtEmail").value;
+        le=document.getElementById("txtPhone").value;
+        caja=document.getElementById("txtSeguro2").value;
+	caja1=document.getElementById("txtAsunto").value;
+
+	
+        ancho1=anch.length;
+        largo1=larg.length;
+         len1=le.length;
+          fuera=caja.length;
+           fuera1=caja1.length;
+
+  	Seguro2=document.getElementById("txtSeguro2").value;
+  	if(Seguro2==Seguro1){
+  		if((((ancho1==0)||(largo1==0))||((len1==0)||(fuera==0)))||(fuera1==0)){
+  		alert("Falta algún dato");
+  	}
+else{
+	alert("Enviado");
+
+	document.getElementById("txtNombre").value=' ';
+	document.getElementById("txtEmail").value=' ';
+	document.getElementById("txtPhone").value=' ';
+	document.getElementById("txtSeguro2").value=' ';
+	document.getElementById("txtAsunto").value=' ';
+
+}
+
+     
+
+  	}
+  	else{
+  		 alert("No introduziste el Password corectamente");
+
+  	}
+  	
+
+
+  }
+</script>
+</head> 
+<body> 
+
+<div data-role="page" id="page">
+	<div data-role="header">
+		<h1> Fan Page Sleeping With Sirens</h1>
+	</div>
+  <center> <br> <img src="img/269616_421559911214217_216035328_n.jpg" width="80%" height="30%"> </center> <br>
+	<div data-role="content">	
+		<ul data-role="listview">
+			<li><a href="#page2">¿Quiénes Somos?</a></li>
+            <li><a href="#page3">Servicios o Productos</a></li>
+			<li><a href="#page4">Equipo</a></li>
+            <li><a href="#page5">Contáctanos</a></li>
+		</ul>		
+	</div>
+	<div data-role="footer">
+		<h4>Sleepers.com</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page2">
+	<div data-role="header">
+		<h1>¿Quiénes Somos?</h1>
+	</div>
+	<div data-role="content">	
+		<center><h2> Fansenses De SWS (Sleppers)</h2></center>
+     <strong> Nosotros somos un grupo de Fanáticos que hacemos esta página en honor a una banda Post-hardcore, llamada Sleeping With Sirens, en pocas palabras la página es de los Sleepers y para los Sleepers.</strong>
+     <center><img src="img/sleeping_with_sirens_wallpaper__w_glow__by_darkdissolution-d5z5qvd.png" width="90%" height="35%"> </center>
+       <center> <h2> Misión </h2> </center>
+       <strong> Nuestra misión en general es atraer a más gente hacia la música de Sleeping With Sirens  ¿Por qué?... simple mostrar un género que no es muy conocido entre la música actual (Rock) pero desde lo realista no intentamos hacer cambiar sus gustos es más enfocado a lo recomendable.</strong>
+    <center> <img src="img/Mision.jpg" width="50%" height="35%"> </center>
+          <center> <h2> Visión </h2> </center>
+        		<strong>La visión de este proyecto es que se logre nuestro objetivo con la finalidad de que la comunidad crezca poco a poco y que sea constante mientras tanto que se disfrute la música de Sleeping With Sirens ha preferencia del oyente así como de los productos relacionados con la banda (ropa, música accesorios etc.).</strong> 
+                <center> <img src="img/keep-calm-and-listen-to-sleeping-with-sirens-36.png" width="50%" height="35%"> </center>
+                <center> <h2> Valores  </h2> </center> 
+                 <strong>Los valores que se promueven en esta página son simples convivencia entre los fanáticos a esta banda sin violencia o agresión solo con un fin lucrativo escuchar a la banda y hacer amistades a través de la música que nos une.</strong>
+                <center> <img src="img/maxresdefault.jpg" width="80%" height="35%"> </center>
+ 
+ <center><aside><audio controls controls   >
+<source src="video y audio/King For A Day pies Kellin Quinn.mp3" type="audio/mp3" >
+</audio> </aside> <strong>King Of The Day (play me)</strong></center>
+
+	</div>
+	<div data-role="footer">
+		<h4>Sleepers.com</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page3">
+	<div data-role="header">
+		<h1>Productos </h1>
+	</div>
+	<div data-role="content">
+   <center> <h2> Música </h2></center>	
+		<center><iframe width="50%" height="45%" src="https://www.youtube.com/embed/fhO8x6bdZ4I" frameborder="0" allowfullscreen></iframe>	</center>
+<center><iframe width="50%" height="45%" src="https://www.youtube.com/embed/poZLiypLJzQ" frameborder="0" allowfullscreen></iframe></center>
+<center><iframe width="50%" height="45%" src="https://www.youtube.com/embed/RF19aKuF2qQ" frameborder="0" allowfullscreen></iframe></center>
+<center><iframe width="50%" height="45%" src="https://www.youtube.com/embed/71SvPulAyZI" frameborder="0" allowfullscreen></iframe></center>
+<center><iframe width="50%" height="45%" src="https://www.youtube.com/embed/vLjDbuU-Bc8" frameborder="0" allowfullscreen></iframe></center>
+
+<br>
+ <center><h2> Accesorios Ropa etc.</h2></center>
+<center><table width="100%" border="0">
+  <tr>
+    <td><img src="img/blusasws1.jpg" width="50%" height="80%"></td>
+    <td>$250.00 Blusa Sleeper Rosa</td>
+  </tr>
+  
+  <tr>
+    <td><img src="img/chamarasws2.jpg" width="60%" height="99%"></td>
+    <td>$355.00 Sudadera Negra Sws</td>
+  </tr>
+  
+  <tr>
+    <td><img src="img/playera sleeping3.jpg" width="50%" height="80%"></td>
+    <td>$300.00 Playera Negra Estampado</td>
+  </tr>
+  
+  <tr>
+    <td><img src="img/zapatossws4.jpg" width="70%" height="30%"></td>
+    <td>$425.00 Tenis Diseño With Ears To See And eyes To Hear*</td>
+  </tr>
+ 
+  <tr>
+    <td><img src="img/pulserasws5.JPG" width="50%" height="50%"></td>
+    <td>$50.00 Pulsera Sws </td>
+     </tr>
+    
+     <tr>
+     <td><img src="img/Sleeping-With-Sirens-Lets-Cheers-To-This.jpg" width="60%" height="30%"></td>
+    <td>$250.00 Album Let's Cheer To This
+    <audio controls controls   >
+<source src="video y audio/11-sleeping_with_sirens-lets_cheers_to_this.mp3" type="audio/mp3" >
+</audio>  </td>
+  </tr>
+   <tr>
+    <td><img src="img/bolsa de sws.jpg" width="50%" height="50%"></td>
+    <td>$120.00 Bolso de Sleeping With Sirens </td>
+     </tr>
+     
+     <tr>
+     <td><iframe width="100%" height="50%" src="https://www.youtube.com/embed/2h6nnp9fxPQ?list=PL797CCD36CDE84BAC" frameborder="0" allowfullscreen></iframe> </td>
+    <td>$100.00 Album If You Were A Movie, This Would Be Your Soundtrack
+   </td>
+  </tr>
+</table>
+<br>
+	</div>
+	<div data-role="footer">
+		<h4>Sleepers.com</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page4">
+	<div data-role="header">
+		<h1>Equipo</h1>
+	</div>
+	<div data-role="content">	
+		<h2> Descripción de Equipo: </h2>	<strong>Nuestro Equipo está dedicado a distribuir la música de Sleepeing With Sirens ya que nos gusta demasiado esta banda y encontramos aprecio por la misma.</strong>	
+        <table width="100%" border="3">
+  <tr>
+    <td><img src="img/imagen004.jpg" width="100%" height="50%"></td>
+    <td> <h4>Descipción del Programador: Axel Fernando Valdez García </h4> 
+    Bueno, soy un chico de 16 años de edad que hace esta simple página por un motivo un fanatismo hacía la banda "Sleeping With Sirens", como ya se había mencionado en puntos anteriores, actualmente estudio, me gusta mucho el Rock /,,/ soy una persona agradable cuando la conoces muy bien, sin en cambio si no nos conocemos mucho no soy muy amigable, depende la confianza, me gusta el anime y soy fanatico de los videos de "Vlogers" en Youtube. </td>
+  </tr>
+</table>
+<br>
+
+ <table width="100%" border="3">
+  <tr>
+    <td><img src="img/freptyliano.jpg" width="100%" height="30%"></td>
+    <td> <h4>Descipción del Programador: Fredy Sanchez Isidoro  </h4> 
+    Parte de mi equipo la conforma el Joven llamado Fredy Sanchez alias, "Slender", "Frepty", "Ash Saiky" o "ashley purdy dante" pero en fin es buena onda tiene 18 años de edad es alto demasiado y es buena onda hace reir hasta a la persona más seria  un gran amigo, aunque  un poco ingenuo en las cosas serias pero, cuando se lo propone puede ser demasiado serio, es fanatico del Juego "Devil May Cry".</td>
+  </tr>
+</table>
+
+	</div>
+	<div data-role="footer">
+		<h4>Sleepers.com</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page5">
+	<div data-role="header">
+		<h1>Contáctanos</h1>
+	</div>
+	<div data-role="content">	
+			
+          <table width="0" border="0">
+  <tr>
+    <td><label for="textinput">Nombre:</label></td>
+    <td>
+      
+      <input type="text" name="txtNombre" id="txtNombre" value="" onBlur="NombreUsuario()" />
+   </td>
+  </tr>
+  <tr>
+    <td><label for="textinput">E-mail:</label></td>
+    <td> <input type="text" name="txtEmail" id="txtEmail" value="" onBlur="email()" /></td>
+  </tr>
+  <tr>
+    <td><label for="textinput">Teléfono:</label></td>
+    <td> <input type="text" name="txtPhone" id="txtPhone" value="" onBlur="telefono()" /></td>
+  </tr>
+  <tr>
+    <td><label for="textinput">Asunto:</label></td>
+    <td>
+      <textarea cols="40" rows="8" name="txtAsunto" id="txtAsunto" onBlur="Asunto()"></textarea></td>
+  </tr>
+  <tr>
+   
+<td><label for="textinput">Seguridad:</label></td>
+    <td> <input type="text" name="txtSeguro1" id="txtSeguro1" value="Kellin Quinn" disabled="disabled" /> </td>
+     <td> <input type="text" name="txtSeguro2" id="txtSeguro2" value=""  /></td>
+  </tr>
+  <tr>
+    <td colspan="2"><button onClick="Acceso()">Enviar</button></td>
+    
+  </tr>
+</table>
+
+            
+	</div>
+	<div data-role="footer">
+		<h4>Sleepers.com</h4>
+	</div>
+</div>
+
+</body>
+</html>
